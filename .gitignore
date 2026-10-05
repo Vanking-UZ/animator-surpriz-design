@@ -1,0 +1,92 @@
+# --- Секреты и локальное окружение ---
+.env
+.env.*
+!.env.example
+
+# --- Python ---
+__pycache__/
+*.py[cod]
+*.pyd
+.venv/
+.venv-run/
+.venv-audit/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+# --- Node / Next.js ---
+node_modules/
+.next/
+webapp/.next.*/
+*.tsbuildinfo
+test-results/
+
+# --- Данные и бэкапы (живут в /opt/surpriz/content на сервере) ---
+*.sqlite
+*.sqlite3
+*.db
+backups/
+*.zip
+content/data/admin/*.sqlite3-shm
+content/data/admin/*.sqlite3-wal
+content/data/forms/*.jsonl
+
+# --- Локальные артефакты разработки ---
+.cache/
+tmp_*
+*.log
+diagnostics/logs/
+diagnostics/scratch/
+diagnostics/screens_current/
+diagnostics/server.err.log
+diagnostics/server.out.log
+.inspect/
+.remember/
+/1/
+/*.png
+/*.MOV
+static/media/
+static/admin-media/generated/
+webapp/public/admin-media/generated/
+
+# --- Редакторы и IDE ---
+.idea/
+.vscode/
+*.swp
+*~
+
+# --- ОС ---
+.DS_Store
+._*
+Thumbs.db
+desktop.ini
+
+# --- Ассистенты кода и их служебные файлы ---
+.playwright-mcp/
+.claude/
+CLAUDE.md
+.agents/
+AGENTS.md
+.codex/
+.cursor/
+.cursorrules
+.cursorignore
+.kiro/
+.windsurf*
+.aider*
+.continue/
+.gemini/
+GEMINI.md
+.roo*
+.clinerules
+.specstory/
+memory-bank/
+MEMORY.md
+.serena/
+.mcp.json
+mcp.json
+.github/copilot-instructions.md
+.github/instructions/
+.github/prompts/

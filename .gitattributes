@@ -1,0 +1,38 @@
+# Текст: нормализация переводов строк (LF в репозитории)
+* text=auto
+
+# Бинарные файлы
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.gif binary
+*.webp binary
+*.avif binary
+*.ico binary
+*.mp4 binary
+*.webm binary
+*.mov binary
+*.MOV binary
+*.woff binary
+*.woff2 binary
+*.ttf binary
+*.otf binary
+*.eot binary
+*.pdf binary
+*.sqlite3 binary
+*.zip binary
+
+# Зеркало WordPress: хранится байт-в-байт (часть файлов с CRLF), не считается кодом проекта
+static/wp-content/** -text linguist-vendored
+static/wp-includes/** -text linguist-vendored
+*.min.js linguist-vendored
+*.min.css linguist-vendored
+
+# Сгенерированные файлы
+webapp/pnpm-lock.yaml linguist-generated
+webapp/src/data/catalog.generated.json linguist-generated
+surpriz/data/catalogs.json linguist-generated
+
+# Next.js RSC payloads (.rsc) GitHub Linguist ошибочно определяет как «RouterOS Script»
+*.rsc linguist-language=JSON linguist-generated
+webapp/.next*/** linguist-generated
